@@ -10,4 +10,4 @@ My implementation code of Double DQN
 - It takes inspiration from the separation of Q for estimation and Q for behavior in traditional Double Q learning.
 - Since DQN utilizes a target network, it leverages it to train Q in a Double Q learning style.
 - However, the updating process of the target network follows the same approach as in DQN. (Soft or Hard target update)
-- $$Y=R_{t+1} + \gamma Q_{\theta}(S_{t+1}, \argmax_a Q_{\theta'}(S_{t+1}, a))$$
+- $$Y^{\text{DoubleDQN}}=R_{t+1} + \gamma Q_{\theta}(S_{t+1}, \argmax_a Q_{\theta'}(S_{t+1}, a))$$
